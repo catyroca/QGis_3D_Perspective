@@ -1,0 +1,142 @@
+{
+  "type": "scene",
+  "properties": {
+    "height": 45.1,
+    "width": 100.0,
+    "baseExtent": [
+      704432.7762160854,
+      4614019.944240685,
+      766179.0050161147,
+      4641867.493429498
+    ],
+    "crs": "EPSG:25830",
+    "proj": "+proj=utm +zone=30 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs",
+    "rotation": 0,
+    "wgs84Center": {
+      "lat": 41.76846662160468,
+      "lon": -0.16911707873037896
+    },
+    "zExaggeration": 1.0,
+    "zShift": 0.0
+  },
+  "layers": [
+    {
+      "type": "layer",
+      "id": 1,
+      "properties": {
+        "name": "cn_threejs",
+        "queryable": 1,
+        "visible": true,
+        "type": "line",
+        "objType": "Line"
+      },
+      "data": {
+        "materials": [
+          {
+            "type": 2,
+            "c": 16744192
+          }
+        ],
+        "blocks": [
+          {
+            "url": "./data/index/L0_GEOM0.json"
+          },
+          {
+            "url": "./data/index/L0_GEOM1.json"
+          },
+          {
+            "url": "./data/index/L0_GEOM2.json"
+          },
+          {
+            "url": "./data/index/L0_GEOM3.json"
+          },
+          {
+            "url": "./data/index/L0_GEOM4.json"
+          },
+          {
+            "url": "./data/index/L0_GEOM5.json"
+          },
+          {
+            "url": "./data/index/L0_GEOM6.json"
+          }
+        ]
+      }
+    },
+    {
+      "type": "layer",
+      "id": 3,
+      "properties": {
+        "name": "clip_mdt",
+        "queryable": 1,
+        "visible": true,
+        "type": "dem",
+        "shading": true
+      },
+      "data": [
+        {
+          "type": "block",
+          "layer": 3,
+          "block": 0,
+          "grid": {
+            "width": 298,
+            "height": 135,
+            "url": "./data/index/L1_DEM0.bin"
+          },
+          "width": 100.0,
+          "height": 45.1,
+          "translate": [
+            0.0,
+            0.0,
+            0
+          ],
+          "material": {
+            "type": 0,
+            "image": {
+              "url": "./data/index/L1_IMG0.png"
+            },
+            "ds": 1
+          },
+          "sides": true
+        }
+      ]
+    },
+    {
+      "type": "layer",
+      "id": 4,
+      "properties": {
+        "name": "mdt_web",
+        "queryable": 1,
+        "visible": true,
+        "type": "dem",
+        "shading": true
+      },
+      "data": [
+        {
+          "type": "block",
+          "layer": 4,
+          "block": 0,
+          "grid": {
+            "width": 298,
+            "height": 135,
+            "url": "./data/index/L2_DEM0.bin"
+          },
+          "width": 100.0,
+          "height": 45.1,
+          "translate": [
+            0.0,
+            0.0,
+            0
+          ],
+          "material": {
+            "type": 0,
+            "image": {
+              "url": "./data/index/L2_IMG0.png"
+            },
+            "ds": 1
+          },
+          "sides": true
+        }
+      ]
+    }
+  ]
+}
